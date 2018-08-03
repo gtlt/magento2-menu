@@ -10,7 +10,7 @@ $productTitle = $block->getProductTitle($nodeId);
 $productUrl = $productUrl ?: '#';
 $dataAttribute = '';
 $classLink = $block->getIsRoot() ? $class . '__link' : $class . '__inner-link';
-$title = $block->getTitle();
+$title = __($block->getTitle());
 
 if ($nodeId) {
     $dataAttribute = ' data-menu="menu-' . $nodeId . '"';
